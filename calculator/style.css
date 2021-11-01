@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700&subset=latin,cyrillic);
+
+html, body {
+    margin: 0 auto;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    user-select: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+
+    font-family: 'Lora', serif;
+    background-color: #000;
+}
+
+.calculator__container {
+    width: 380px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #ddc3a5;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 3px;
+
+    box-shadow: 0px 0px 100px 22px rgba(221, 195, 165, 0.34);
+}
+
+.calculator__item {
+    background-color: #201e20;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius:  2px;
+}
+
+form {
+    width: 380px;
+}
+
+input {
+    width: 376px;
+    height: 60px;
+    border: none;
+    font-size: 25px;
+    outline: none;
+    text-align: right;
+
+    border-radius:  2px;;
+ }
+
+ .input {
+    grid-column: 1/-1;
+    padding: 0;
+ }
+
+ .equal {
+    background-color: #e0a96d;
+ }
+
+ .copyright {
+     color: white;
+     font-size: 60px;
+
+     margin-bottom: 120px;
+ }
